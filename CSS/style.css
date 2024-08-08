@@ -1,0 +1,47 @@
+/*css externo*/
+
+/* Reset básico */
+* { /* asterisco é o seletor universal*/
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+/*seletor por id */
+#item1{
+    color: green;
+}
+#item2{
+    color:purple;
+}
+#item3{
+    color:orangered;
+}
+/*classe*/
+.subtitulo{
+    background-color: yellow
+    /*note que o estilo nao foi aplicado com h2 contatos pois ela nao faz parte da classe subtitulo*/
+}
+
+/*Box model*/
+#box_model{
+    background-color:pink;
+    /*o width e height só determina o tamanho do elemento, ele nao conta o tamanho do padding e do border tbm. */
+    width: 200px;
+    height: 200px;
+    /*padding - espaçamento do elemento com a borda*/
+    /*sentido horario- top right bottom left*/
+    padding: 50px 25px;
+    /*border - só a borda mesmo*/
+    border: 1px solid black;
+    /*margin - espaçamento externo entre esse elemento e os outros*/
+    /*vamos aumentar o espaçamento do Box Model com o contato e o rodapé*/
+    margin: 20px 0px;
+
+    /*para que o width e o height conte o tamanho do border e do padding tbm, precisamos usar o box sizing do tipo border-box (o padrao é o content box)*/
+    box-sizing: border-box;
+}
+
+
+/*Ver tipos de Display*/
