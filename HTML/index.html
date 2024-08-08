@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!--versao do html-->
+<html lang="en">
+<head> <!--metadados, nao é visivel-->
+    <meta charset="UTF-8"> <!--caracteres da nossa lingua, se o site fosse em japones por exemplo o charset seria outro-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--deixa o site responsivo-->
+    <title>Document</title> <!--nome q fica na aba do site-->
+</head>
+<body><!--tudo q é visivel-->
+    <!--tags de titulo, serve para hierarquia, h1-h6 -->
+    <h1>Site para aprender html!!</h1> <!--use só um h1 por pagina-->
+    <h2>Tags importante:</h2>
+    <h3>Titulo:</h3>
+    <p>use a tag h1 ao h6</p>
+    <h3>Paragrafo:</h3>
+    <p>para escrever esse texto eu estou usando a tag p <br>
+    e para quebrar o texte eu usei a tag br</p>
+    <h3>Listas:</h3>
+    <p>use ol para listas ordenadas e ul para listas nao ordenadas <br>
+       em ambas as listas cada item deve ficar dentro de uma tag li
+    </p>
+    <h4>Listas ordenadas:</h4>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h4>Listas nao ordenadas</h4>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <h3>Link</h3>
+    <p>Estou usando <a href="https://www.youtube.com/watch?v=-FQP7hD-J6A">esse video</a> para aprender!</p>
+    <p>A propósito, para colocar um link usa a tag a</p>
+    <h3>Imagem</h3>
+    <p>use o a tag img</p>
+    <img src="./img/image.png" widht="200" height="200" alt="print do video q estou utilizando">
+    <h3>Tabela</h3>
+    <p>tabelas exigem 3 tags:</p>
+    <h4>Tag Table</h4>
+    <p>as tags de linha e coluna devem ficar dentro de uma tag table</p>
+    <h4>Linha: tr</h4>
+    <p>a tag tr cria as linhas</p>
+    <table>
+        <tr>uma linha</tr>
+        <tr>duas linhas</tr>
+    </table>
+    <h4>Coluna: td</h4>
+    <p>a tag td cria as colunas, deve ficar dentro da tag tr</p>
+    <table border="1">
+        <tr>
+            <th>coluna1</th>
+            <th>coluna 2</th>
+        </tr>
+        <tr>
+            <td>linha 1, coluna 1</td>
+            <td>linha 1, coluna 2</td>
+        </tr>
+        <tr>
+            <td>linha 2, coluna 1</td>
+            <td>linha 2, coluna 2</td>
+        </tr>
+    </table>
+    <h3>Formulario</h3>
+    <p>temos varias tag para montar um formulario, todas devem ficar dentro de uma tag form</p>
+    <form action="" method="post"> <!--o action é o lugar q vai receber os dados do form-->
+        <!---->
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" min="1" max="120">
+
+        <label>genero</label>
+        <input type="radio" name="genero" id="feminino" value="Feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="masculino" value="Masculino">
+        <label for="masculino">Masculino</label>
+
+        <label>Frutas preferidas</label>
+        <input type="checkbox" name="fruta" id="banana" value="banana">
+        <label for="banana">Banana</label>
+        <input type="checkbox" name="fruta" id="maca" value="maca">
+        <label for="maca">Maça</label>
+        <input type="checkbox" name="fruta" id="morango" value="morango">
+        <label for="morango">Morango</label>
+
+        <button type="submit">Enviar</button>
+    </form> 
+</body>
+</html>
