@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--usar header, main e footer -->
+        <header>
+            <h1>Formulario de Registro</h1>
+        </header>
+        <main>
+            <form id="myForm" action="/submit" method="post">
+                <!-- Campo de texto -->
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+                <!-- Campo de email -->
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Seu email" required>
+
+                <!-- Campo de senha -->
+                <label for="pw">Senha</label>
+                <input type="password" id="pw" name="pw" placeholder="Sua senha" required>
+                
+                <!-- Campo de número -->
+                <label for="age">Idade</label>
+                <input type="number" id="age" name="age" min="1" max="120" placeholder="Idade" required>
+
+                <!-- Campo de data -->
+                <label for="date">Data de nascimento</label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Checkbox -->
+                 <label>Interesses</label>
+                 <input type="checkbox" id="interesse1" name="interesses" value="Tecnologia">
+                 <label for="interesse1">Tecnologia</label>
+                 <input type="checkbox" id="interesse2" name="interesses" value="Esportes">
+                 <label for="interesse2">Esportes</label>
+                 <input type="checkbox" id="interesse3" name="interesses" value="Música">
+                 <label for="interesse3">Música</label>
+
+                <!-- Radio buttons -->
+                <label>Gênero:</label>
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="genero" value="Feminino" required>
+                <label for="feminino">Feminino</label>
+
+                <!-- Textarea -->
+                <label for="comentarios">Comentários:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Meu Site</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
